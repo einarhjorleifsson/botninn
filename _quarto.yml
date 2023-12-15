@@ -1,0 +1,19 @@
+project:
+  type: website
+
+website:
+  title: "botninn"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - model.qmd
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: source
+
