@@ -5,3 +5,7 @@
 data-copy/julian
 data-copy/LHG
 data-copy/XYZ_Oracle_gagnagrunnur
+*.parquet
+*.tif
+*.log
+/.quarto/
