@@ -8,6 +8,7 @@ website:
       - href: index.qmd
         text: Home
       - model.qmd
+      - arnarfjordur.qmd
 
 format:
   html:

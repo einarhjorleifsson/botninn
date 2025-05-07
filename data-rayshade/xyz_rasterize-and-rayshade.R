@@ -1,4 +1,4 @@
-# nohup R < data-rayshade/xyz_rasterize-and-rayshade.R --vanilla > data-rayshade/xyz_rasterize-and-rayshade_2023-12-17.log &
+# nohup R < data-rayshade/xyz_rasterize-and-rayshade.R --vanilla > data-rayshade/xyz_rasterize-and-rayshade_2023-12-18.log &
 
 # Here we rasterize data from each of 1e5 x 1e5 meter squares, square number being
 #  a variable in the parquet-data. The square model is described in model.qmd
@@ -40,6 +40,8 @@ r0 <-
 r0 <- r0 |> aggregate(2) # 8 meter raster the highest resolution
 SQ <- c(10:13, 16:20, 23:26, 30:31) # check-out model.qmd
 # SQ <- 25 # Vestmannaeyjar as a test
+# resume
+SQ <- c(17:20, 23:26, 30:31) # check-out model.qmd
 for(s in 1:length(SQ)) {
   print(paste0("doing ", s, " of ", length(SQ), " (tile ", SQ[s], ") squares ------------------------"))
   xyz <-
